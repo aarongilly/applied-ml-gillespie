@@ -15,3 +15,7 @@ __pycache__/
 
 # Jupyter Notebook checkpoint files
 .ipynb_checkpoints
+
+example01/
+example02/
+example03/
