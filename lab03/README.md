@@ -16,7 +16,7 @@ For more detail see the the Jupyter Notebook `ml03_gillespie.ipynb`, which conta
 The classifiers were built and tested using 3 cases, all predicting whether a person would survive. The cases were based on the following inputs. 
 
 1. `alone`
-2. `age`, `class`
+2. `age`
 3. `age`, `sex`
 
 The **test data** results created by the types of classifiers are summarized in the table below. Using the `classification_report` method from sklearn, reporting the `weighted avg` for each metric.
@@ -24,26 +24,26 @@ The **test data** results created by the types of classifiers are summarized in 
 
 | Model Type               | Case   | Features Used     | Accuracy   | Precision   | Recall   | F1-Score    | Notes |
 |------------              |--------|---------------    |----------  |-----------  |--------  |-----------  |-------|
-| **Decision Tree**        | Case 1 | alone             | 63%        | 64%         | 63%      | 63%      | - |
-|                          | Case 2 | age + class       | 61%        | 58%         | 61%      | 55%         | - |
-|                          | Case 3 | age + sex         | 82%        | 82%         | 83%      | 82%         | -       |
+| **Decision Tree**        | Case 1 | alone             | 63%        | 64%         | 63%      | 63%         | -     |
+|                          | Case 2 | age               | 68%        | 68%         | 68%      | 64%         | -     |
+|                          | Case 3 | age + sex         | 82%        | 82%         | 83%      | 82%         | Winner winner       |
 |--------------------------|--------|-------------------|------------|-------------|----------|-------------|---------|
-| **SVM (RBF Kernel)**     | Case 1 | alone             | xx%        | xx%         | xx%      | xx%         | -       |
-|                          | Case 2 | age + class       | xx%        | xx%         | xx%      | xx%         | -       |
-|                          | Case 3 | age + sex         | xx%        | xx%         | xx%      | xx%         | -       |
+| **SVM (RBF Kernel)**     | Case 1 | alone             | 63%        | 64%         | 63%      | 63%         | -       |
+|                          | Case 2 | age               | 63%        | 66%         | 63%      | 52%         | -       |
+|                          | Case 3 | age + sex         | 64%        | 68%         | 64%      | 63%         | -       |
 | -------------------      | ------ | ---------------   | ---------- | ----------- | -------- | ----------- | ------- |
-| **SVM (Linear Kernel)**  | Case 1 | alone             | xx%        | xx%         | xx%      | xx%         | -       |
-|                          | Case 2 | age + class       | xx%        | xx%         | xx%      | xx%         | -       |
-|                          | Case 3 | age + sex         | xx%        | xx%         | xx%      | xx%         | -       |
+| **SVM (Linear Kernel)**  | Case 1 | alone             | 63%        | 64%         | 63%      | 63%         | -       |
+|                          | Case 2 | age               | 61%        | 38%         | 61%      | 47%         | -       |
+|                          | Case 3 | age + sex         | 78%        | 78%         | 78%      | 78%         | -       |
 | -------------------      | ------ | ---------------   | ---------- | ----------- | -------- | ----------- | ------- |
-| **SVM (Poly Kernel)**    | Case 1 | alone             | xx%        | xx%         | xx%      | xx%         | -       |
-|                          | Case 2 | age + class       | xx%        | xx%         | xx%      | xx%         | -       |
-|                          | Case 3 | age + sex         | xx%        | xx%         | xx%      | xx%         | -       |
+| **SVM (Poly Kernel)**    | Case 1 | alone             | 63%        | 64%         | 63%      | 63%         | -       |
+|                          | Case 2 | age               | 61%        | 38%         | 61%      | 47%         | -       |
+|                          | Case 3 | age + sex         | 68%        | 74%         | 68%      | 61%         | -       |
 | -------------------      | ------ | ---------------   | ---------- | ----------- | -------- | ----------- | ------- |
-| **SVM (Sigmoid Kernel)** | Case 1 | alone             | xx%        | xx%         | xx%      | xx%         | -       |
-|                          | Case 2 | age + class       | xx%        | xx%         | xx%      | xx%         | -       |
-|                          | Case 3 | age + sex         | xx%        | xx%         | xx%      | xx%         | -       |
+| **SVM (Sigmoid Kernel)** | Case 1 | alone             | 63%        | 64%         | 63%      | 63%         | -       |
+|                          | Case 2 | age               | 54%        | 53%         | 54%      | 53%         | -       |
+|                          | Case 3 | age + sex         | 55%        | 55%         | 55%      | 55%         | -       |
 | -------------------      | ------ | ---------------   | ---------- | ----------- | -------- | ----------- | ------- |
-| **Neural Network (MLP)** | Case 1 | alone             | xx%        | xx%         | xx%      | xx%         | -       |
-|                          | Case 2 | age + class       | xx%        | xx%         | xx%      | xx%         | -       |
-|                          | Case 3 | age + sex         | xx%        | xx%         | xx%      | xx%         | -       |
+| **Neural Network (MLP)** | Case 1 | alone             | 63%        | 64%         | 63%      | 63%         | -       |
+|                          | Case 2 | age               | 63%        | 66%         | 63%      | 52%         | -       |
+|                          | Case 3 | age + sex         | 79%        | 79%         | 79%      | 79%         | Close second       |
