@@ -36,3 +36,13 @@ For more detail see the the Jupyter Notebook `ml04_gillespie.ipynb`, which conta
 1. Try different features besides the ones used.
 
     I added a 5th case using all the available features. This case did perform better than any of the other 4 tested. I assume using literally **all** of the features isn't particularly necesary (as some are surely correlates of one another, not meaningfully separable). This work was done above, alongside cases 1 through 4.
+
+
+## Model Comparison
+
+| Model | R² | MSE | MAE |
+|-------|----|------|-----|
+| Linear | 0.361 | 924.73 | 21.35 |
+| Ridge | 0.361 | 923.94 | 21.33 |
+| ElasticNet | 0.390 | 882.04 | 19.24 |
+| Polynomial degree 3 | 0.449 | 797.81 | 17.11 |
